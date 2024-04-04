@@ -8,12 +8,12 @@ func main() {
 	hello()
 	// 2
 	func() {
-		fmt.Println("Hello, Go1!")
+		fmt.Println("Hello, Go2!")
 	}()
 	// 3
 	var f3 func()
 	f3 = func() {
-		fmt.Println("Hello, Go2!")
+		fmt.Println("Hello, Go3!")
 	}
 	hello3(f3)
 	// 4
@@ -24,11 +24,10 @@ func main() {
 	// 6
 	fmt.Print("0 1 ")
 	fibo(0, 1, 3)
-	fmt.Println()
 }
 
 func hello() {
-	fmt.Println("Hello, Go3!")
+	fmt.Println("Hello, Go1!")
 }
 
 func hello3(func_v func()) {
